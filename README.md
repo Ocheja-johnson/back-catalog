@@ -1,3 +1,4 @@
 # Back Catalog phone app
 
-This is published automatically by the Back Catalog app on your Mac. Your list is not stored here.
+Published automatically by the Back Catalog app on Johnson's Mac (version 1.0.0).
+This holds only the app. The list itself is kept in a private repository.
