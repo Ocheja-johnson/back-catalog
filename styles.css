@@ -94,6 +94,19 @@ a { color: var(--accent); }
   border: 1px solid var(--line-strong); background: var(--surface); border-radius: 99px;
   padding: 6px 11px; font-size: 12.5px; font-weight: 600; color: var(--ink-2); cursor: pointer; min-height: 34px;
 }
+/* Refresh (1.1.2): next to the sync pill */
+.topacts { display: flex; align-items: center; gap: 8px; flex: none; }
+.refreshbtn {
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  border: 1px solid var(--line-strong); background: var(--surface); border-radius: 99px;
+  padding: 6px 12px 6px 10px; font-size: 12.5px; font-weight: 600; color: var(--ink); cursor: pointer; min-height: 34px;
+}
+.refreshbtn:hover { border-color: var(--accent); color: var(--accent); }
+.refreshbtn svg { width: 16px; height: 16px; flex: none; }
+.refreshbtn.busy { cursor: default; color: var(--ink-2); }
+.refreshbtn.busy svg { animation: spin .9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 370px) { .refreshbtn span { display: none; } .refreshbtn { padding: 6px 9px; } }
 .syncdot { width: 9px; height: 9px; border-radius: 50%; background: var(--ok); flex: none; }
 .syncdot.syncing { background: var(--accent); animation: pulse 1s ease-in-out infinite; }
 .syncdot.offline, .syncdot.pending { background: var(--warn-line); }
