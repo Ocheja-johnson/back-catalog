@@ -374,6 +374,9 @@ textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
   border: 1px dashed var(--line-strong); background: transparent; color: var(--ink-3); font-size: 12.5px; text-align: left; cursor: pointer;
 }
 .cell:hover { border-color: var(--c); color: var(--ink); }
+/* a channel the video was never on (every channel makes its own videos) */
+.cell.none, .cell.none:hover { border-style: dashed; border-color: var(--line); color: var(--ink-3, var(--ink-2)); cursor: default; opacity: .55; }
+@media (max-width: 760px) { .cell.none { display: none; } }
 .cell.on { border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); background: color-mix(in srgb, var(--c) 13%, var(--surface)); color: var(--ink); }
 .cell.chk { border: 1px dashed var(--warn-line); background: var(--warn-soft); }
 .cell.on.part { background: linear-gradient(90deg, color-mix(in srgb, var(--c) 24%, var(--surface)) var(--fill, 50%), var(--surface) var(--fill, 50%)); }
