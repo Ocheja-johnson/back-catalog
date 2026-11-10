@@ -714,3 +714,8 @@ dialog.sheet::backdrop { background: var(--backdrop); }
 .havelist .m { color: var(--ink-2); font-size: 12.5px; overflow-wrap: anywhere; }
 .havelist .m.few { color: var(--warn); }
 .eparts li.todo { border-style: dashed; opacity: .85; }
+
+/* 1.4.2: the listed artists who would break the repeat rule on this channel */
+.eprule { padding: 10px 12px; border-radius: 10px; background: var(--warn-soft); display: grid; gap: 8px; font-size: 13px; }
+.eprule p { margin: 0; color: var(--ink-2); line-height: 1.45; }
+.eprule p strong { color: var(--warn); }
