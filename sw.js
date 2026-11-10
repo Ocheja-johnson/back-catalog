@@ -1,6 +1,6 @@
 // Back Catalog phone app: works offline, updates itself. Your list never goes through here;
 // it goes straight between the app and your private GitHub space.
-const VERSION = '1.4.2-00f362de';
+const VERSION = '1.5.0-beff8922';
 const CACHE = 'back-catalog-' + VERSION;
 const FILES = ["./","app.js","fonts/bodoni-moda-latin-500-normal.woff2","fonts/bodoni-moda-latin-600-normal.woff2","fonts/bodoni-moda-latin-ext-600-normal.woff2","fonts/dm-mono-latin-400-normal.woff2","fonts/dm-mono-latin-500-normal.woff2","fonts/schibsted-grotesk-latin-400-normal.woff2","fonts/schibsted-grotesk-latin-500-normal.woff2","fonts/schibsted-grotesk-latin-600-normal.woff2","fonts/schibsted-grotesk-latin-700-normal.woff2","fonts/schibsted-grotesk-latin-ext-400-normal.woff2","fonts/schibsted-grotesk-latin-ext-600-normal.woff2","icons/apple-touch-icon.png","icons/favicon-64.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","index.html","manifest.webmanifest","styles.css"];
 self.addEventListener('install', (e) => {
