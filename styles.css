@@ -719,3 +719,13 @@ dialog.sheet::backdrop { background: var(--backdrop); }
 .eprule { padding: 10px 12px; border-radius: 10px; background: var(--warn-soft); display: grid; gap: 8px; font-size: 13px; }
 .eprule p { margin: 0; color: var(--ink-2); line-height: 1.45; }
 .eprule p strong { color: var(--warn); }
+
+/* 1.6.0: how the latest videos are doing (Today) */
+.numlist .nv { font-weight: 650; padding: 1px 8px; border-radius: 999px; font-size: 12px; background: var(--surface-2); color: var(--ink-2); }
+.numlist .nv.hit, .numlist .nv.good { background: var(--ok-soft); color: var(--ok); }
+.numlist .nv.slow { background: var(--warn-soft); color: var(--warn); }
+.numtable { width: calc(100% - 36px); margin: 10px 18px 6px; border-collapse: collapse; font-size: 13px; }
+.numtable th { text-align: left; font-weight: 600; color: var(--ink-3, var(--ink-2)); padding: 6px 8px 6px 0; border-bottom: 1px solid var(--line); }
+.numtable td { padding: 7px 8px 7px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+.numtable tr:last-child td { border-bottom: 0; }
+@media (max-width: 560px) { .numtable th:nth-child(3), .numtable td:nth-child(3) { display: none; } }
